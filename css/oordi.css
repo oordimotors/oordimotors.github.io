@@ -1,0 +1,22 @@
+body{
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 14px;
+}
+
+.header{
+    background: #dc2626;
+    padding: 82px 0;
+}
+
+h1{
+    font-family: 'proxima_novalight', sans-serif;
+    color: #686868;
+    font-size: 33px;
+    line-height: 47px;
+    margin: 80px 0;
+}
+
+::selection{
+    background: #dc2626;
+    color: #ffffff;
+}
