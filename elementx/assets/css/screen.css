@@ -1,0 +1,331 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\compass-core-1.0.3\stylesheets\compass\reset\_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/partials/_layout.scss */
+body {
+  background: #072643;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* line 9, ../sass/partials/_layout.scss */
+.brandBar {
+  width: 100%;
+}
+
+/* line 14, ../sass/partials/_layout.scss */
+.header .container-fluid {
+  background: #eeeeee;
+}
+/* line 17, ../sass/partials/_layout.scss */
+.header .navbar-header {
+  padding: 30px 15px;
+}
+/* line 20, ../sass/partials/_layout.scss */
+.header .navbar-header .navbar-brand {
+  height: auto;
+  padding: 0;
+}
+/* line 25, ../sass/partials/_layout.scss */
+.header .heroImage, .header .navbar-header {
+  position: relative;
+  z-index: 3;
+}
+/* line 29, ../sass/partials/_layout.scss */
+.header .heroImage {
+  margin-left: 165px;
+}
+/* line 32, ../sass/partials/_layout.scss */
+.header .lowerBg {
+  z-index: 1;
+}
+/* line 35, ../sass/partials/_layout.scss */
+.header .cta-360 {
+  position: absolute;
+  z-index: 5;
+  top: 153px;
+  left: 30px;
+}
+/* line 41, ../sass/partials/_layout.scss */
+.header .cta-360 li {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f55453;
+  padding: 0 0 46px;
+  height: 50px;
+}
+/* line 49, ../sass/partials/_layout.scss */
+.header .cta-360 li:hover {
+  color: #ffffff;
+}
+/* line 54, ../sass/partials/_layout.scss */
+.header .ctaLines-360 {
+  position: absolute;
+  z-index: 2;
+  top: 160px;
+  width: 84%;
+  left: 30px;
+}
+/* line 61, ../sass/partials/_layout.scss */
+.header .ctaLines-360 li {
+  width: 100%;
+  border-top: 1px solid #ff7272;
+  padding: 0 0 46px;
+  height: 50px;
+}
+/* line 67, ../sass/partials/_layout.scss */
+.header .ctaLines-360 li:hover {
+  border-top: 1px solid #ffffff;
+}
+/* line 72, ../sass/partials/_layout.scss */
+.header .upperBg {
+  z-index: 4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  pointer-events: none;
+}
+/* line 77, ../sass/partials/_layout.scss */
+.header .lowerBg, .header .upperBg {
+  background: #dc2625;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 83, ../sass/partials/_layout.scss */
+.tag {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #dc2625;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  display: inline-block;
+}
+
+/* line 93, ../sass/partials/_layout.scss */
+h1 {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 56px;
+  margin: 0 0 30px;
+}
+
+/* line 99, ../sass/partials/_layout.scss */
+h2 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0 0 30px;
+}
+
+/* line 105, ../sass/partials/_layout.scss */
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0 0 30px;
+}
+
+/* line 111, ../sass/partials/_layout.scss */
+p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #5d6469;
+  margin: 0 0 30px;
+}
+
+/* line 117, ../sass/partials/_layout.scss */
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5d6469;
+  margin: 0 0 15px;
+}
+
+/* line 124, ../sass/partials/_layout.scss */
+form label.control-label {
+  font-size: 14px;
+  color: #5d6469;
+  text-transform: uppercase;
+}
+/* line 129, ../sass/partials/_layout.scss */
+form .customRadio {
+  border: 2px solid #c2c4c6;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0 10px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #363b3f;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 141, ../sass/partials/_layout.scss */
+form .customRadio:hover {
+  background: #ffffff;
+}
+/* line 145, ../sass/partials/_layout.scss */
+form .customRadio input[type="radio"] {
+  display: none;
+}
+/* line 149, ../sass/partials/_layout.scss */
+form .customRadio.checked {
+  border: 2px solid #dc2625;
+}
+/* line 155, ../sass/partials/_layout.scss */
+form .form-group.last-child {
+  margin-bottom: 30px;
+}
+
+/* line 160, ../sass/partials/_layout.scss */
+.container-fluid {
+  max-width: 1440px;
+}
+
+/* line 164, ../sass/partials/_layout.scss */
+.btn {
+  height: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  background: none;
+  line-height: 33px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  text-decoration: none;
+}
+/* line 173, ../sass/partials/_layout.scss */
+.btn .big {
+  font-size: 29px;
+  font-weight: 800;
+  display: inline-block;
+}
+/* line 178, ../sass/partials/_layout.scss */
+.btn .fa {
+  font-size: 17px;
+}
+/* line 182, ../sass/partials/_layout.scss */
+.btn.btn-primary {
+  color: #dc2625;
+  border: 2px solid #dc2625;
+  margin-right: 15px;
+}
+/* line 187, ../sass/partials/_layout.scss */
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background: #dc2625;
+}
+/* line 192, ../sass/partials/_layout.scss */
+.btn.btn-default {
+  color: #363b3f;
+  border: 2px solid #363b3f;
+}
+
+/* line 198, ../sass/partials/_layout.scss */
+a {
+  color: #00b4ff;
+  text-decoration: underline;
+}
+
+/* line 203, ../sass/partials/_layout.scss */
+.modal {
+  font-size: 14px;
+}
+/* line 207, ../sass/partials/_layout.scss */
+.modal table th {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* line 215, ../sass/partials/_layout.scss */
+.section {
+  padding: 30px;
+}
+/* line 218, ../sass/partials/_layout.scss */
+.section.bgWhite {
+  background: #ffffff;
+}
+/* line 221, ../sass/partials/_layout.scss */
+.section.bgBlack {
+  background: #000000;
+  color: #ffffff;
+}
+/* line 226, ../sass/partials/_layout.scss */
+.section .img-responsive {
+  margin: auto;
+}

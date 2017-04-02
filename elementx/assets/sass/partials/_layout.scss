@@ -1,0 +1,245 @@
+@import "variables";
+@import "compass/css3";
+
+body{
+  background: #072643;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.brandBar{
+  width: 100%;
+}
+.header{
+
+  & .container-fluid{
+    background: $lightBG;
+  }
+  & .navbar-header{
+    padding: 30px 15px;
+
+    & .navbar-brand{
+      height: auto;
+      padding: 0;
+    }
+  }
+  & .heroImage, & .navbar-header{
+    position: relative;
+    z-index: 3;
+  }
+  & .heroImage{
+    margin-left: 165px;
+  }
+  & .lowerBg{
+    z-index: 1;
+  }
+  & .cta-360{
+    position: absolute;
+    z-index: 5;
+    top: 153px;
+    left: 30px;
+
+    & li{
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: $fontBold;
+      color: #f55453;
+      padding: 0 0 46px;
+      height: 50px;
+
+      &:hover{
+        color: #ffffff;
+      }
+    }
+  }
+  & .ctaLines-360{
+    position: absolute;
+    z-index: 2;
+    top: 160px;
+    width: 84%;
+    left: 30px;
+
+    & li{
+      width: 100%;
+      border-top:1px solid #ff7272;
+      padding: 0 0 46px;
+      height: 50px;
+
+      &:hover{
+        border-top:1px solid #ffffff;
+      }
+    }
+  }
+  & .upperBg{
+    z-index: 4;
+    @include opacity(.6);
+    pointer-events: none;
+  }
+  & .lowerBg, & .upperBg{
+    background: $primaryColor;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+  }
+}
+.tag{
+  font-size: 13px;
+  font-weight: $fontBold;
+  color: #ffffff;
+  background: $primaryColor;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  display: inline-block;
+}
+h1{
+  font-weight: $fontBolder;
+  font-size: 54px;
+  line-height: 56px;
+  margin: 0 0 30px;
+}
+h2{
+  font-weight: $fontBolder;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0 0 30px;
+}
+h3{
+  font-weight: $fontBold;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0 0 30px;
+}
+p{
+  font-size: 16px;
+  line-height: 18px;
+  color: $lightGrey;
+  margin: 0 0 30px;
+}
+h5{
+  text-transform: uppercase;
+  font-weight: $fontBold;
+  color: $lightGrey;
+  margin: 0 0 15px;
+}
+form{
+  & label.control-label{
+    font-size: 14px;
+    color: $lightGrey;
+    text-transform: uppercase;
+  }
+  & .customRadio{
+    border:2px solid #c2c4c6;
+    @include border-radius(15px);
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 0 10px 0 0;
+    font-size: 13px;
+    font-weight: $fontBold;
+    color: $darkGrey;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover{
+      background: #ffffff;
+    }
+
+    & input[type="radio"]{
+      display: none;
+    }
+
+    &.checked{
+      border:2px solid $primaryColor;
+    }
+  }
+
+  & .form-group{
+    &.last-child{
+      margin-bottom: 30px;
+    }
+  }
+}
+.container-fluid{
+  max-width: 1440px;
+}
+
+.btn{
+  height: 50px;
+  font-size: 19px;
+  font-weight: $fontBold;
+  background: none;
+  line-height: 33px;
+  @include border-radius(0);
+  text-decoration: none;
+
+  & .big{
+    font-size: 29px;
+    font-weight: $fontBolder;
+    display: inline-block;
+  }
+  & .fa{
+    font-size: 17px;
+  }
+
+  &.btn-primary{
+    color:$primaryColor;
+    border:2px solid $primaryColor;
+    margin-right: 15px;
+
+    &:hover{
+      color:#ffffff;
+      background: $primaryColor;
+    }
+  }
+  &.btn-default{
+    color:$darkGrey;
+    border:2px solid $darkGrey;
+  }
+}
+
+a{
+  color: $link;
+  text-decoration: underline;
+}
+
+.modal{
+  font-size: 14px;
+
+  & table{
+    & th{
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: $fontBold;
+    }
+  }
+}
+
+.section{
+  padding: 30px;
+
+  &.bgWhite{
+    background: $white;
+  }
+  &.bgBlack{
+    background: #000000;
+    color: #ffffff;
+  }
+
+  & .img-responsive{
+    margin: auto;
+  }
+}
+
+// @media (min-width: 1024){
+//   .container {width: 1024px;}
+// }
+// @media (min-width: 1280){
+//   .container {width: 1280px;}
+// }
+// @media (min-width: 1280){
+//   .container {width: 1280px;}
+// }
+// @media (min-width: 1366){
+//   .container {width: 1366px;}
+// }
+// @media (min-width: 1680){
+//   .container {width: 1680px;}
+// }
