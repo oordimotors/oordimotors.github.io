@@ -253,11 +253,27 @@ a{
   }
 }
 
+.thumbnail{
+  padding: 30px 30px 15px;
+
+  & .caption{
+    padding: 15px 0 0;
+  }
+
+  & p{
+    margin: 0 0 15px;
+    font-size: 14px;
+  }
+}
+
 .section{
   padding: 30px;
 
   &.bgWhite{
     background: $white;
+  }
+  &.bgGrey{
+    background: #eeeeee;
   }
   &.bgBlack{
     background: #000000;

@@ -356,19 +356,37 @@ a {
 }
 
 /* line 256, ../sass/partials/_layout.scss */
+.thumbnail {
+  padding: 30px 30px 15px;
+}
+/* line 259, ../sass/partials/_layout.scss */
+.thumbnail .caption {
+  padding: 15px 0 0;
+}
+/* line 263, ../sass/partials/_layout.scss */
+.thumbnail p {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+
+/* line 269, ../sass/partials/_layout.scss */
 .section {
   padding: 30px;
 }
-/* line 259, ../sass/partials/_layout.scss */
+/* line 272, ../sass/partials/_layout.scss */
 .section.bgWhite {
   background: #ffffff;
 }
-/* line 262, ../sass/partials/_layout.scss */
+/* line 275, ../sass/partials/_layout.scss */
+.section.bgGrey {
+  background: #eeeeee;
+}
+/* line 278, ../sass/partials/_layout.scss */
 .section.bgBlack {
   background: #000000;
   color: #ffffff;
 }
-/* line 267, ../sass/partials/_layout.scss */
+/* line 283, ../sass/partials/_layout.scss */
 .section .img-responsive {
   margin: auto;
 }
