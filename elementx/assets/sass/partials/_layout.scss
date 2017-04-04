@@ -14,6 +14,9 @@ body{
   & .container-fluid{
     background: $lightBG;
   }
+  & .btn{
+    margin-bottom: 30px;
+  }
   & .navbar-header{
     padding: 30px 15px;
 
@@ -27,7 +30,7 @@ body{
     z-index: 3;
   }
   & .heroImage{
-    margin-left: 165px;
+
   }
   & .lowerBg{
     z-index: 1;
@@ -55,7 +58,7 @@ body{
     position: absolute;
     z-index: 2;
     top: 160px;
-    width: 84%;
+    width: 65%;
     left: 30px;
 
     & li{
@@ -77,7 +80,7 @@ body{
   & .lowerBg, & .upperBg{
     background: $primaryColor;
     position: absolute;
-    left: 0; right: 0; top: 0; bottom: 0;
+    left: 0; right: 195px; top: 0; bottom: 0;
   }
 }
 .tag{
@@ -160,7 +163,45 @@ form{
 .container-fluid{
   max-width: 1440px;
 }
+#clockdiv{
+  position: relative;
+  display: inline-block;
 
+  & .expiredText{
+    position: absolute;
+    left: 0;
+    right: 30px;
+    top: 0;
+    padding: 17px 0;
+    text-align: center;
+    background: rgba(238, 238, 238, 0.95);
+    bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dc2625;
+  }
+  & > div{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+
+    & > span{
+      border:2px solid #c2c4c6;
+      font-size: 30px;
+      font-weight: lighter;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 45px;
+      display: inline-block;
+    }
+    & > .smalltext{
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+  }
+}
 .btn{
   height: 50px;
   font-size: 19px;
