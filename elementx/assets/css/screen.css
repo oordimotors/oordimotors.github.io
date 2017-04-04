@@ -214,12 +214,17 @@ h5 {
 }
 
 /* line 127, ../sass/partials/_layout.scss */
+form .form-group {
+  margin-bottom: 0;
+}
+/* line 130, ../sass/partials/_layout.scss */
 form label.control-label {
   font-size: 14px;
   color: #5d6469;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-/* line 132, ../sass/partials/_layout.scss */
+/* line 136, ../sass/partials/_layout.scss */
 form .customRadio {
   border: 2px solid #c2c4c6;
   -moz-border-radius: 15px;
@@ -227,41 +232,41 @@ form .customRadio {
   border-radius: 15px;
   display: inline-block;
   padding: 3px 10px;
-  margin: 0 10px 0 0;
+  margin: 0 10px 15px 0;
   font-size: 13px;
   font-weight: 700;
   color: #363b3f;
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 144, ../sass/partials/_layout.scss */
+/* line 148, ../sass/partials/_layout.scss */
 form .customRadio:hover {
   background: #ffffff;
 }
-/* line 148, ../sass/partials/_layout.scss */
+/* line 152, ../sass/partials/_layout.scss */
 form .customRadio input[type="radio"] {
   display: none;
 }
-/* line 152, ../sass/partials/_layout.scss */
+/* line 156, ../sass/partials/_layout.scss */
 form .customRadio.checked {
   border: 2px solid #dc2625;
 }
-/* line 158, ../sass/partials/_layout.scss */
+/* line 162, ../sass/partials/_layout.scss */
 form .form-group.last-child {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
-/* line 163, ../sass/partials/_layout.scss */
+/* line 167, ../sass/partials/_layout.scss */
 .container-fluid {
   max-width: 1440px;
 }
 
-/* line 166, ../sass/partials/_layout.scss */
+/* line 170, ../sass/partials/_layout.scss */
 #clockdiv {
   position: relative;
   display: inline-block;
 }
-/* line 170, ../sass/partials/_layout.scss */
+/* line 174, ../sass/partials/_layout.scss */
 #clockdiv .expiredText {
   position: absolute;
   left: 0;
@@ -275,12 +280,12 @@ form .form-group.last-child {
   font-weight: bold;
   color: #dc2625;
 }
-/* line 183, ../sass/partials/_layout.scss */
+/* line 187, ../sass/partials/_layout.scss */
 #clockdiv > div {
   display: inline-block;
   margin: 0 30px 30px 0;
 }
-/* line 187, ../sass/partials/_layout.scss */
+/* line 191, ../sass/partials/_layout.scss */
 #clockdiv > div > span {
   border: 2px solid #c2c4c6;
   font-size: 30px;
@@ -291,7 +296,7 @@ form .form-group.last-child {
   line-height: 45px;
   display: inline-block;
 }
-/* line 197, ../sass/partials/_layout.scss */
+/* line 201, ../sass/partials/_layout.scss */
 #clockdiv > div > .smalltext {
   font-size: 12px;
   text-transform: uppercase;
@@ -299,7 +304,7 @@ form .form-group.last-child {
   margin: 5px 0;
 }
 
-/* line 205, ../sass/partials/_layout.scss */
+/* line 209, ../sass/partials/_layout.scss */
 .btn {
   height: 50px;
   font-size: 19px;
@@ -311,82 +316,102 @@ form .form-group.last-child {
   border-radius: 0;
   text-decoration: none;
 }
-/* line 214, ../sass/partials/_layout.scss */
+/* line 218, ../sass/partials/_layout.scss */
 .btn .big {
   font-size: 29px;
   font-weight: 800;
   display: inline-block;
 }
-/* line 219, ../sass/partials/_layout.scss */
+/* line 223, ../sass/partials/_layout.scss */
 .btn .fa {
   font-size: 17px;
 }
-/* line 223, ../sass/partials/_layout.scss */
+/* line 227, ../sass/partials/_layout.scss */
 .btn.btn-primary {
   color: #dc2625;
   border: 2px solid #dc2625;
   margin-right: 15px;
 }
-/* line 228, ../sass/partials/_layout.scss */
+/* line 232, ../sass/partials/_layout.scss */
 .btn.btn-primary:hover {
   color: #ffffff;
   background: #dc2625;
 }
-/* line 233, ../sass/partials/_layout.scss */
+/* line 237, ../sass/partials/_layout.scss */
 .btn.btn-default {
   color: #363b3f;
   border: 2px solid #363b3f;
 }
 
-/* line 239, ../sass/partials/_layout.scss */
+/* line 243, ../sass/partials/_layout.scss */
 a {
   color: #00b4ff;
   text-decoration: underline;
 }
 
-/* line 244, ../sass/partials/_layout.scss */
+/* line 248, ../sass/partials/_layout.scss */
 .modal {
   font-size: 14px;
 }
-/* line 248, ../sass/partials/_layout.scss */
+/* line 252, ../sass/partials/_layout.scss */
 .modal table th {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
 }
 
-/* line 256, ../sass/partials/_layout.scss */
+/* line 260, ../sass/partials/_layout.scss */
 .thumbnail {
   padding: 30px 30px 15px;
 }
-/* line 259, ../sass/partials/_layout.scss */
+/* line 263, ../sass/partials/_layout.scss */
 .thumbnail .caption {
   padding: 15px 0 0;
 }
-/* line 263, ../sass/partials/_layout.scss */
+/* line 267, ../sass/partials/_layout.scss */
 .thumbnail p {
   margin: 0 0 15px;
   font-size: 14px;
 }
 
-/* line 269, ../sass/partials/_layout.scss */
+/* line 273, ../sass/partials/_layout.scss */
 .section {
   padding: 30px;
 }
-/* line 272, ../sass/partials/_layout.scss */
+/* line 276, ../sass/partials/_layout.scss */
 .section.bgWhite {
   background: #ffffff;
 }
-/* line 275, ../sass/partials/_layout.scss */
+/* line 279, ../sass/partials/_layout.scss */
 .section.bgGrey {
   background: #eeeeee;
 }
-/* line 278, ../sass/partials/_layout.scss */
+/* line 282, ../sass/partials/_layout.scss */
 .section.bgBlack {
   background: #000000;
   color: #ffffff;
 }
-/* line 283, ../sass/partials/_layout.scss */
+/* line 287, ../sass/partials/_layout.scss */
 .section .img-responsive {
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  /* line 294, ../sass/partials/_layout.scss */
+  .header .lowerBg, .header .upperBg {
+    right: 0;
+  }
+  /* line 297, ../sass/partials/_layout.scss */
+  .header .upperBg {
+    right: 50%;
+  }
+  /* line 300, ../sass/partials/_layout.scss */
+  .header .tag {
+    margin-top: 30px;
+  }
+  /* line 303, ../sass/partials/_layout.scss */
+  .header .heroImage {
+    float: none !important;
+    margin: auto;
+  }
 }

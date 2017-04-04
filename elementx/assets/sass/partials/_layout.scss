@@ -124,17 +124,21 @@ h5{
   margin: 0 0 15px;
 }
 form{
+  & .form-group{
+    margin-bottom: 0;
+  }
   & label.control-label{
     font-size: 14px;
     color: $lightGrey;
     text-transform: uppercase;
+    margin-bottom: 10px;
   }
   & .customRadio{
     border:2px solid #c2c4c6;
     @include border-radius(15px);
     display: inline-block;
     padding: 3px 10px;
-    margin: 0 10px 0 0;
+    margin: 0 10px 15px 0;
     font-size: 13px;
     font-weight: $fontBold;
     color: $darkGrey;
@@ -156,7 +160,7 @@ form{
 
   & .form-group{
     &.last-child{
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -285,9 +289,23 @@ a{
   }
 }
 
-// @media (min-width: 1024){
-//   .container {width: 1024px;}
-// }
+@media (max-width: 768px){
+  .header{
+    & .lowerBg, & .upperBg{
+      right: 0;
+    }
+    & .upperBg{
+      right: 50%;
+    }
+    & .tag{
+      margin-top: 30px;
+    }
+    & .heroImage{
+      float: none !important;
+      margin: auto;
+    }
+  }
+}
 // @media (min-width: 1280){
 //   .container {width: 1280px;}
 // }
