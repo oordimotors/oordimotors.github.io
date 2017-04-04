@@ -8,7 +8,7 @@ $(document).ready(function(){
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("Apr 4, 2017 23:37:25").getTime();
+var countDownDate = new Date("Apr 10, 2017 24:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -40,7 +40,7 @@ var x = setInterval(function() {
         $('#clockdiv .hours').text('00');
         $('#clockdiv .minutes').text('00');
         $('#clockdiv .seconds').text('00');
-        $('#clockdiv .expiredText').text('Campaign Expired');
+        $('#clockdiv .expiredText').show();
         // document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
