@@ -43,7 +43,7 @@ $(document).ready(function(){
   var counter = 0;
   setInterval(change, 1000);
   function change() {
-   $('img.heroImage').attr('src', 'assets/images/360/'+text[counter]+'.png');
+   $('img.heroImage').attr('src', 'assets-0.1/images/360/'+text[counter]+'.png');
       counter++;
       if(counter >= text.length) { counter = 0; }
   };
