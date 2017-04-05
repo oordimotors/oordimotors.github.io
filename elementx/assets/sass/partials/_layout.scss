@@ -57,7 +57,7 @@ body{
   & .ctaLines-360{
     position: absolute;
     z-index: 2;
-    top: 160px;
+    top: 95px;
     width: 65%;
     left: 30px;
 
@@ -155,6 +155,14 @@ form{
 
     &.checked{
       border:2px solid $primaryColor;
+    }
+    &.disabled{
+      @include opacity(.5);
+      cursor: default;
+
+      &:hover{
+        background: none;
+      }
     }
   }
 

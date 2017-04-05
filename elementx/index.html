@@ -40,21 +40,9 @@
           </div>
           <div class="row">
             <div class="col-sm-5">
-              <ul class="cta-360">
-                <li>Front</li>
-                <li></li>
-                <li>Right</li>
-                <li></li>
-                <li></li>
-                <li>Back</li>
-                <li></li>
-                <li></li>
-                <li>Left</li>
-              </ul>
               <span class="upperBg"></span>
               <img class="img-responsive heroImage pull-right" width="360" src="assets/images/360/1.png"/>
               <ul class="ctaLines-360">
-                <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -80,11 +68,11 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label">Material</label>
                   <div class="col-sm-10">
-                    <label class="customRadio">
+                    <label class="customRadio material_faux">
                       <input type="radio" name="Material" value="Faux Leather" checked>
                       Faux Leather
                     </label>
-                    <label class="customRadio">
+                    <label class="customRadio material_genuine">
                       <input type="radio" name="Material" value="Genuine Leather">
                       Genuine Leather
                     </label>
@@ -94,20 +82,20 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label">Variants</label>
                   <div class="col-sm-10">
-                    <label class="customRadio">
+                    <label class="customRadio variant_base">
                       <input type="radio" name="Variants" value="Base" checked>
                       Base
                     </label>
-                    <label class="customRadio">
-                      <input type="radio" name="Variants" value="With Cooling">
+                    <label class="customRadio disabled variant_cooling">
+                      <input type="radio" name="Variants" value="With Cooling" disabled>
                       With Cooling
                     </label>
-                    <label class="customRadio">
+                    <label class="customRadio variant_heating">
                       <input type="radio" name="Variants" value="With Heating system">
                       With Heating system
                     </label>
-                    <label class="customRadio">
-                      <input type="radio" name="Variants" value="With Cooling & Heating System">
+                    <label class="customRadio disabled variant_cooling_heating">
+                      <input type="radio" name="Variants" value="With Cooling & Heating System" disabled>
                       With Cooling & Heating System
                     </label>
                   </div>
@@ -146,7 +134,7 @@
                 </div>
 
                 <button class="btn btn-primary"><span class="fa fa-rupee"></span> <span class="big">15000</span>.00 - Buy Now</button>
-                <a class="btn btn-default">Read More <span class="fa fa-angle-down"></span></a>
+                <a href="#compatibility" class="btn btn-default">Read More <span class="fa fa-angle-down"></span></a>
               </form>
 
               <p><span class="fa fa-truck"></span> Expected date of shipping is 09-Apr-2017</p>
@@ -176,7 +164,7 @@
         </div>
       </div>
 
-      <div class="container-fluid section bgWhite text-center">
+      <div class="container-fluid section bgWhite text-center" id="compatibility">
         <span class="tag">compatibility</span>
         <h2>
           Compatable with all bikes

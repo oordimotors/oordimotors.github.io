@@ -5,6 +5,49 @@ $(document).ready(function(){
      $('.customRadio').removeClass("checked");
      $("input:radio:checked").parent('label').addClass("checked");
    });
+
+  //  material_faux
+  //  material_genuine
+  //  variant_base
+  // variant_cooling
+  // variant_heating
+  // variant_cooling_heating
+
+  $('.material_faux input[type="radio"]').change(function() {
+    $('.variant_cooling, .variant_cooling_heating').attr('disabled',!this.checked);
+    $('.variant_cooling input[type="radio"], .variant_cooling_heating input[type="radio"]').attr('disabled', 'disabled');
+    $('.variant_cooling, .variant_cooling_heating').addClass('disabled');
+    $('.variant_base, .variant_cooling, .variant_heating, .variant_cooling_heating').removeClass('checked');
+    $('.variant_base input[type="radio"]').prop('checked', 'checked').parent().addClass('checked');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('8000');
+  });
+  $('.material_genuine input[type="radio"]').change(function() {
+    $('.variant_cooling input[type="radio"], .variant_cooling_heating input[type="radio"]').removeAttr('disabled');
+    $('.variant_cooling, .variant_cooling_heating').removeClass('disabled');
+  });
+
+  $('.variant_base input[type="radio"]').change(function() {
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('8000');
+  });
+  $('.variant_cooling input[type="radio"]').change(function() {
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('10500');
+  });
+  $('.variant_heating input[type="radio"]').change(function() {
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('10500');
+  });
+  $('.variant_cooling_heating input[type="radio"]').change(function() {
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('16000');
+  });
+
+  var text = ["1", "2", "3", "4", "5", "6", "7", "8"];
+  var counter = 0;
+  setInterval(change, 1000);
+  function change() {
+   $('img.heroImage').attr('src', 'assets/images/360/'+text[counter]+'.png');
+      counter++;
+      if(counter >= text.length) { counter = 0; }
+  };
+
 });
 
 // Set the date we're counting down to
