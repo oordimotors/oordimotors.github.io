@@ -42,13 +42,14 @@ body{
     z-index: 9;
   }
   & .heroImage{
-    width: 360px;
-    height: 551px;
+    text-align: center;
 
     & img{
-      width: 100%;
-      height: 100%;
+      width: 360px;
+      height: 551px;
       background-size: 100% !important;
+      background-repeat: no-repeat !important;
+      margin:25px auto;
 
       &.one{background: url('../images/360/1.png');}
       &.two{background: url('../images/360/2.png');}
