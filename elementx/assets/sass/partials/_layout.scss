@@ -29,6 +29,18 @@ body{
     position: relative;
     z-index: 3;
   }
+  & .signature{
+    text-transform: uppercase;
+    font-weight: $fontBolder;
+    font-size: 13px;
+    position: absolute;
+    @include transform(rotate(-90deg));
+    left: -115px;
+    top: 255px;
+    color: $darkGrey;
+    letter-spacing: 15px;
+    z-index: 9;
+  }
   & .heroImage{
 
   }
@@ -82,6 +94,22 @@ body{
     position: absolute;
     left: 0; right: 195px; top: 0; bottom: 0;
   }
+}
+.whyElement{
+  & img.img-responsive{
+    margin-bottom: 15px;
+
+    &+h5{
+      margin-bottom: 30px;
+
+      &+p{
+        margin-top: -20px;
+      }
+    }
+  }
+}
+.copyright{
+  font-size: 13px;
 }
 .tag{
   font-size: 13px;
