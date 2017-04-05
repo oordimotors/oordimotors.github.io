@@ -39,14 +39,31 @@ $(document).ready(function(){
     $(this).parents('.form-horizontal').find('.btn-primary .big').text('16000');
   });
 
-  var text = ["1", "2", "3", "4", "5", "6", "7", "8"];
-  var counter = 0;
-  setInterval(change, 1000);
-  function change() {
-   $('img.heroImage').attr('src', 'assets-0.1/images/360/'+text[counter]+'.png');
+  // var text = ["1", "2", "3", "4", "5", "6", "7", "8"];
+  // var counter = 0;
+  // setInterval(change, 1000);
+  // function change() {
+  //  $('img.heroImage').attr('src', 'assets-0.1/images/360/'+text[counter]+'.png');
+  //     counter++;
+  //     if(counter >= text.length) { counter = 0; }
+  // };
+
+  var counter = 0,
+  divs = $('.heroImage .one, .heroImage .two, .heroImage .three, .heroImage .four, .heroImage .five, .heroImage .six, .heroImage .seven, .heroImage .eight');
+
+  function showDiv () {
+      divs.hide() // hide all divs
+          .filter(function (index) { return index == counter % 8; }) // figure out correct div to show
+          .show(); // and show it
+
       counter++;
-      if(counter >= text.length) { counter = 0; }
-  };
+  }; // function to loop through divs and show correct div
+
+  showDiv(); // show first div
+
+  setInterval(function () {
+      showDiv(); // show next div
+  }, 1000); // do this every 10 seconds
 
 });
 
