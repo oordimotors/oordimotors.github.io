@@ -25,6 +25,34 @@ body{
       padding: 0;
     }
   }
+  & .instaCTA{
+    position: relative;
+    display: inline-block;
+
+    &:hover{
+      & .btn-primary{
+        color:#ffffff;
+        background: $primaryColor;
+      }
+    }
+
+    & #IMPWCTA{}
+
+    & .im-checkout{
+      position: absolute;
+      left: 0; right: 0; top: 0; bottom: 0;
+      @include opacity(0);
+      display: none;
+
+      &:first-child{
+        display: block;
+      }
+
+      & a{
+        padding: 17px;
+      }
+    }
+  }
   & .heroImage, & .navbar-header{
     position: relative;
     z-index: 3;

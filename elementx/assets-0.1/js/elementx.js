@@ -20,10 +20,14 @@ $(document).ready(function(){
     $('.variant_base, .variant_cooling, .variant_heating, .variant_cooling_heating').removeClass('checked');
     $('.variant_base input[type="radio"]').prop('checked', 'checked').parent().addClass('checked');
     $(this).parents('.form-horizontal').find('.btn-primary .big').text('8000');
+    $('#IMPWCTA .im-checkout').hide();
+    $('#IMPWCTA .im-checkout:first-child').show();
   });
   $('.material_genuine input[type="radio"]').change(function() {
     $('.variant_cooling input[type="radio"], .variant_cooling_heating input[type="radio"]').removeAttr('disabled');
     $('.variant_cooling, .variant_cooling_heating').removeClass('disabled');
+    $('#IMPWCTA .im-checkout').hide();
+    $('#IMPWCTA .im-checkout:last-child').show();
   });
 
   $('.variant_base input[type="radio"]').change(function() {
@@ -38,15 +42,6 @@ $(document).ready(function(){
   $('.variant_cooling_heating input[type="radio"]').change(function() {
     $(this).parents('.form-horizontal').find('.btn-primary .big').text('16000');
   });
-
-  // var text = ["1", "2", "3", "4", "5", "6", "7", "8"];
-  // var counter = 0;
-  // setInterval(change, 1000);
-  // function change() {
-  //  $('img.heroImage').attr('src', 'assets-0.1/images/360/'+text[counter]+'.png');
-  //     counter++;
-  //     if(counter >= text.length) { counter = 0; }
-  // };
 
   var counter = 0,
   divs = $('.heroImage .one, .heroImage .two, .heroImage .three, .heroImage .four, .heroImage .five, .heroImage .six, .heroImage .seven, .heroImage .eight');
