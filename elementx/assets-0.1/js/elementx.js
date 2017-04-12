@@ -31,16 +31,16 @@ $(document).ready(function(){
   });
 
   $('.variant_base input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('8000');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('6975');
   });
   $('.variant_cooling input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('10500');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('9660');
   });
   $('.variant_heating input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('10500');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('9660');
   });
   $('.variant_cooling_heating input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('16000');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('13100');
   });
 
   var counter = 0,
