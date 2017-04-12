@@ -253,6 +253,10 @@ form{
   position: relative;
   display: inline-block;
 
+  & > p{
+    margin: 0 0 10px;
+  }
+
   & .expiredText{
     position: absolute;
     left: 0;
