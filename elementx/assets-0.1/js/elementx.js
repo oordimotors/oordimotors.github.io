@@ -19,7 +19,7 @@ $(document).ready(function(){
     $('.variant_cooling, .variant_cooling_heating').addClass('disabled');
     $('.variant_base, .variant_cooling, .variant_heating, .variant_cooling_heating').removeClass('checked');
     $('.variant_base input[type="radio"]').prop('checked', 'checked').parent().addClass('checked');
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('8000');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text('6975');
     $('#IMPWCTA .im-checkout').hide();
     $('#IMPWCTA .im-checkout:first-child').show();
   });
