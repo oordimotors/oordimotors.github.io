@@ -13,13 +13,17 @@ $(document).ready(function(){
   // variant_heating
   // variant_cooling_heating
 
+  var price1 = 6975;
+  var price2 = 9660;
+  var price3 = 13100;
+
   $('.material_faux input[type="radio"]').change(function() {
     $('.variant_cooling, .variant_cooling_heating').attr('disabled',!this.checked);
     $('.variant_cooling input[type="radio"], .variant_cooling_heating input[type="radio"]').attr('disabled', 'disabled');
     $('.variant_cooling, .variant_cooling_heating').addClass('disabled');
     $('.variant_base, .variant_cooling, .variant_heating, .variant_cooling_heating').removeClass('checked');
     $('.variant_base input[type="radio"]').prop('checked', 'checked').parent().addClass('checked');
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('6975');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text(price1);
     $('#IMPWCTA .im-checkout').hide();
     $('#IMPWCTA .im-checkout:first-child').show();
   });
@@ -31,16 +35,16 @@ $(document).ready(function(){
   });
 
   $('.variant_base input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('6975');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text(price1);
   });
   $('.variant_cooling input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('9660');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text(price2);
   });
   $('.variant_heating input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('9660');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text(price2);
   });
   $('.variant_cooling_heating input[type="radio"]').change(function() {
-    $(this).parents('.form-horizontal').find('.btn-primary .big').text('13100');
+    $(this).parents('.form-horizontal').find('.btn-primary .big').text(price3);
   });
 
   var counter = 0,
