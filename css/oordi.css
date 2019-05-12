@@ -4,19 +4,19 @@ body{
 }
 
 .header{
-    background: #dc2626;
+    background: #004689;
     padding: 50px 0;
 }
 
 h1{
     font-family: 'proxima_novalight', sans-serif;
-    color: #686868;
+    color: #004689;
     font-size: 33px;
     line-height: 47px;
     margin: 50px 0;
 }
 
 ::selection{
-    background: #dc2626;
+    background: #004689;
     color: #ffffff;
 }
