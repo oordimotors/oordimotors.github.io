@@ -79,3 +79,27 @@ h1+strong{
     line-height: 45px;
     font-weight: 600;
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+    .content_wrapper{
+        padding: 0;
+        margin-top: -150px;
+    }
+    .content_wrapper img{
+        position: relative;
+        margin-bottom: -200px;
+        margin-left: -40%;
+        max-width: 140%;
+    }
+    .content_wrapper .content{
+        padding: 30px;
+    }
+    br{
+        display: none;
+    }
+    .brand{
+        position: relative;
+    }
+}
