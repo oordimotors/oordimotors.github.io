@@ -121,6 +121,10 @@ margin: 0 0 10px;
     background: #DD282B;
     border: none;
     color: #fff;
+    cursor: pointer;
+}
+#get_update .fields button:hover{
+    background: #5A5A7A;
 }
 
 footer{
@@ -131,6 +135,11 @@ footer{
 .thankyou{
     text-align: center;
     margin: 30px 0 90px;
+}
+
+::selection{
+    background: #DD282B;
+    color: #fff;
 }
 
 
