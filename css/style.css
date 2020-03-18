@@ -13,93 +13,128 @@ img{
 
 h1{
     font-weight: 800;
-    font-size: 70px;
+    font-size: 42px;
     color: #FFFFFF;
-    line-height: 70px;
-    margin: 0 0 30px;
+    line-height: 46px;
+    margin: 20px 0 0;
+}
+h2{font-size: 35px; margin: 0 0 45px;}
+h5{
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.opacity95{
+opacity: .90;
+}
+
+form{
+    margin: 90px 0;
 }
 
 p{
+    font-family: 'Bitter', serif;
+    font-size: 22px;
+    line-height: 32px;
     margin: 0 0 30px;
-}
-
-ul{
-    margin: 0 0 75px;
-}
-
-ul li{
-    margin-bottom: 15px;
+    
 }
 
 h1+strong{
     font-weight: 600;
-    font-size: 18px;
-    color: #8272F1;
-    line-height: 23px;
-    margin: 0 0 75px;
+    font-size: 16px;
+    color: #DD282B;
+    line-height: 46px;
     display: inline-block;
+    margin: 0 0 90px;
+}
+
+.hero-container{position: relative; max-width: 1070px; margin: 0 auto;}
+
+.hero-container .trident-name{
+    margin: 50px 0 0 -30px;
 }
 
 .brand{
-    margin: 40px 0 0;
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+    padding: 33px 0 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
-.content_wrapper{
+.container{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 30px;
 }
 
-.content_wrapper .content{
+.container.home{
+    background: url('../images/trident-side-view.png') no-repeat center 67px;
+    background-size: 1440px;
+}
+
+.content_wrapper{
     position: relative;
-    z-index: 1;
-    margin: 170px 0 350px;
+    max-width: 770px;
+    margin: 0 auto;
 }
 
-.content_wrapper img{
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
+.btn.secondary{
+color: #5A5A7A;
+display: inline-block;
+border: 1px solid #5A5A7A;
+border-radius: 5px;
+text-decoration: none;
+padding: 6px 10px;
+}
+.btn.secondary:hover{
+    color: #07060E;
+    background: #5A5A7A;
 }
 
-.btn{
-    color: #fff;
-    background: #8272F1;
-    min-width: 310px;
-    height: 45px;
+#get_update{
+    border: 1px solid #fff;
+    padding: 30px;
+}
+#get_update > span{
     display: inline-block;
-        text-align: center;
-    line-height: 45px;
-    font-weight: 600;
+    width: 100%;
+}
+#get_update .heading{
+font-size: 22px;
+margin: 0 0 10px;
+}
+#get_update .fields{
+    margin: 30px 0 0;
+    display: flex;
+}
+#get_update .fields input{
+    font-size: 16px;
+    padding: 12px;
+    flex: 1;
+    outline: none;
+}
+#get_update .fields button{
+    font-size: 16px;
+    padding: 15px;
+    background: #DD282B;
+    border: none;
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.thankyou{
+    text-align: center;
+    margin: 30px 0 90px;
 }
 
 
 
 @media only screen and (max-width: 1000px) {
-    .content_wrapper{
-        padding: 0;
-        margin-top: -150px;
-    }
-    .content_wrapper img{
-        position: relative;
-        margin-bottom: -200px;
-        margin-left: -40%;
-        max-width: 140%;
-    }
-    .content_wrapper .content{
-        padding: 30px;
-    }
-    br{
-        display: none;
-    }
-    .brand{
-        position: relative;
-    }
+    
 }
