@@ -167,41 +167,36 @@ h2{
         }
 
         & .innerMenu{
-            position: fixed;
+            position: absolute;
             display: inline-block;
             left: 0;
-            top: 425px;
+            top: 0;
             bottom: 0;
             width: 135px;
             margin: auto 30px;
             z-index: 89;
+            background: url('../images/innerMenuSprite.svg') no-repeat;
+            @include opacity(.2);
 
-            & > img{
-                width: 135px;
-                background: url('../images/innerMenuSprite.svg') no-repeat;
-                margin: 50px 0;
-                @include opacity(.2);
-
-                &.performance{
-                    height: 497px;
-                    background-position: 0px 0px;
-                }
-                &.convertible{
-                    height: 425px;
-                    background-position: -135px 0px;
-                }
-                &.seats{
-                    height: 620px;
-                    background-position: -280px 0px;
-                }
-                &.safety{
-                    height: 704px;
-                    background-position: -420px 0px;
-                }
-                &.dimension{
-                    height: 427px;
-                    background-position: -560px 0px;
-                }
+            &.performance{
+                height: 497px;
+                background-position: 0px 0px;
+            }
+            &.convertible{
+                height: 425px;
+                background-position: -135px 0px;
+            }
+            &.seats{
+                height: 620px;
+                background-position: -280px 0px;
+            }
+            &.safety{
+                height: 704px;
+                background-position: -420px 0px;
+            }
+            &.dimension{
+                height: 427px;
+                background-position: -560px 0px;
             }
         }
 

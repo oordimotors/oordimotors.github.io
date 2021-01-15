@@ -29,14 +29,6 @@
                 </span>
             </div>
 
-            <div class="innerMenu">
-                <img src="./assets/images/blank.png" class="performance"/>
-                <img src="./assets/images/blank.png" class="convertible"/>
-                <img src="./assets/images/blank.png" class="seats"/>
-                <img src="./assets/images/blank.png" class="safety"/>
-                <img src="./assets/images/blank.png" class="dimension"/>
-            </div>
-
             <div class="content">
                 <h2>
                     For those who live on their <br/>
@@ -48,6 +40,7 @@
         </div>
 
         <div class="container slide2">
+            <img src="./assets/images/blank.png" class="innerMenu performance"/>
             <div class="content">
                 <h2>
                     Preparing to unleash.
@@ -56,6 +49,7 @@
         </div>
 
         <div class="container slide3">
+            <img src="./assets/images/blank.png" class="innerMenu convertible"/>
             <div class="content">
                 <h2>
                     Feel the breeze topless.
@@ -64,6 +58,7 @@
         </div>
 
         <div class="container slide4">
+            <img src="./assets/images/blank.png" class="innerMenu seats"/>
             <div class="content">
                 <h2>
                     Adventure together.
@@ -72,6 +67,7 @@
         </div>
 
         <div class="container slide5">
+            <img src="./assets/images/blank.png" class="innerMenu safety"/>
             <div class="content">
                 <h2>
                     Dodge the obstacle<br/>
@@ -81,6 +77,7 @@
         </div>
 
         <div class="container slide6">
+            <img src="./assets/images/blank.png" class="innerMenu dimension"/>
             <div class="content">
                 <h2>
                     The build of tomorrow.
@@ -103,27 +100,54 @@
             $(this).parents('.container.slide1').toggleClass('hovered');
         });
 
+        var pixelRatio = window.devicePixelRatio;
+
         $(document).scroll(function(){
             var slideHeight = $('.slide2').offset().top;
             var docHeight = $(window).scrollTop();
-            console.log(slideHeight, docHeight/slideHeight+1);
-
             var activeSlide = docHeight/slideHeight+1;
 
             // .css('background-image', 'url(' + imageUrl + ')');
 
+            var ext;
+            var location = "./assets/images/trident/";
+
             if(activeSlide < 1.7){
-                $('.container.slide1 .trident').attr('style', 'background-image: url("./assets/images/trident/trident@2x.png")');
+                if (pixelRatio == 1){
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident.png")');
+                } else{
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident@2x.png")');
+                }
             } else if (activeSlide < 2.7){
-                $('.container.slide1 .trident').attr('style', 'background-image: url("./assets/images/trident/performance@2x.png")');
+                if (pixelRatio == 1){
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/performance.png")');
+                } else{
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/performance@2x.png")');
+                }
             } else if (activeSlide < 3.7){
-                $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/convertible@2x.png")');
+                if (pixelRatio == 1){
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/convertible.png")');
+                } else{
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/convertible@2x.png")');
+                }
             } else if (activeSlide < 4.7){
-                $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/adjustable-seats@2x.png")');
+                if (pixelRatio == 1){
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/adjustable-seats.png")');
+                } else{
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/adjustable-seats@2x.png")');
+                }
             } else if (activeSlide < 5.7){
-                $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance@2x.png")');
+                if (pixelRatio == 1){
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance.png")');
+                } else{
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance@2x.png")');
+                }
             } else if (activeSlide < 6){
-                $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/dimension@2x.png")');
+                if (pixelRatio == 1){
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/dimension.png")');
+                } else{
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/dimension@2x.png")');
+                }
             } 
 
         });
