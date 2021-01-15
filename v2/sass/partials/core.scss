@@ -5,6 +5,7 @@ $bg1: #4AC498;
 $bg2: #F9F3D9;
 $bg3: #F28E85;
 $lightColor: $bg2;
+$greenColor: $bg1;
 
 body,html{
     font-family: $sanserifFont;
@@ -14,6 +15,8 @@ body,html{
 
 * {
     box-sizing: border-box;
+    @include transition-property(all);
+    @include transition-duration(.3s);
 }
 
 h2{
@@ -36,11 +39,59 @@ h2{
         display: flex;
         align-items: center;
         padding-top: 90px;
+        position: relative;
         // overflow: hidden;
 
         &.slide1{
             background-color: $bg1;
             z-index: 1;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                z-index: 0;
+                left: 0;
+                top: 0;
+                height: 100%;
+                background: url('../images/auroraBG.png') no-repeat center center;
+                background-size: 100%;
+                @include opacity(0);
+                @include transition-duration(1s);
+            }
+
+            & > *{
+                z-index: 2;
+            }
+
+            &.hovered{
+                &::after{
+                    @include opacity(1);
+                }
+
+                & .header{
+                    color: $greenColor;
+
+                    & a{
+                        color: $greenColor;
+                    }
+                }
+
+                & .content{
+                    & .trident{
+                        background-image: url('../images/trident/aurora@2x.png');
+                    }
+
+                    & .trident-label{
+                        filter: brightness(10) hue-rotate(314deg);
+                        opacity: .5;
+                    }
+                }
+
+                & .innerMenu img{
+                    filter: brightness(2000%);
+                }
+            }
         }
         &.slide2{
             background-color: $bg3;
@@ -91,7 +142,7 @@ h2{
             position: fixed;
             display: inline-block;
             left: 0;
-            top: 0;
+            top: 425px;
             bottom: 0;
             width: 135px;
             margin: auto 30px;
@@ -101,6 +152,7 @@ h2{
                 width: 135px;
                 background: url('../images/innerMenuSprite.svg') no-repeat;
                 margin: 50px 0;
+                @include opacity(.2);
 
                 &.performance{
                     height: 497px;
@@ -123,10 +175,6 @@ h2{
                     background-position: -560px 0px;
                 }
             }
-        
-            &:hover{
-                // filter: sepia(51%) saturate(2878%) hue-rotate(0deg) brightness(100%) contrast(104%);
-            }
         }
 
         & .content{
@@ -135,7 +183,7 @@ h2{
             position: relative;
 
             & .trident{
-                background: url('../images/trident.png') no-repeat center center;
+                background: url('../images/trident/trident@2x.png') no-repeat center center;
                 width: 100%;
                 height: 100%;
                 display: inline-block;

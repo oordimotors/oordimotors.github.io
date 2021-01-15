@@ -60,5 +60,15 @@
     
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.container.slide1 h2').hover(function(){
+            $(this).parents('.container.slide1').toggleClass('hovered');
+        });
+    });
+</script>
+
 
 </html>
