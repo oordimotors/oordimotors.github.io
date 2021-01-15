@@ -205,14 +205,14 @@ h2 {
 }
 /* line 137, ../../sass/partials/core.scss */
 .wrapper .container .content .trident {
-  background: url("../images/trident.png") no-repeat 0 -70px;
-  width: 1440px;
+  background: url("../images/trident.png") no-repeat center center;
+  width: 100%;
   height: 100%;
   display: inline-block;
   background-size: 2166px;
   position: fixed;
-  left: 0;
-  top: 100px;
+  left: 80px;
+  top: 120px;
   right: 0;
   margin: auto;
 }
