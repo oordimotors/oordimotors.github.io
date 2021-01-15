@@ -101,6 +101,12 @@ h2{
             & h2{
                 color: $darkColor;
             }
+
+            & .content{
+                & .trident{
+                    background-image: url('../images/trident/performance@2x.png');
+                }
+            }
         }
         &.slide3{
             background-color: $bg3;
@@ -146,8 +152,8 @@ h2{
                     margin:0 15px;
     
                     &.btn{
-                        color: $lightColor;
-                        border: 2px solid $lightColor;
+                        color: $darkColor;
+                        border: 2px solid $darkColor;
                         display: inline-block;
                         padding: 12px;
                         border-radius: 10px;
@@ -206,12 +212,12 @@ h2{
 
             & .trident{
                 background: url('../images/trident/trident@2x.png') no-repeat center center;
-                width: 100%;
+                width: 111%;
                 height: 100%;
                 display: inline-block;
                 background-size: 2166px;
                 position: fixed;
-                left: 80px;
+                left: 0;
                 top: 120px;
                 right: 0;
                 margin: auto;

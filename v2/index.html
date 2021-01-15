@@ -58,7 +58,7 @@
         <div class="container slide3">
             <div class="content">
                 <h2>
-                    Preparing to unleash.
+                    Feel the breeze topless.
                 </h2>
             </div>
         </div>
@@ -66,7 +66,7 @@
         <div class="container slide4">
             <div class="content">
                 <h2>
-                    Preparing to unleash.
+                    Adventure together.
                 </h2>
             </div>
         </div>
@@ -74,7 +74,8 @@
         <div class="container slide5">
             <div class="content">
                 <h2>
-                    Preparing to unleash.
+                    Dodge the obstacle<br/>
+                    &nbsp;&nbsp; not the adventure.
                 </h2>
             </div>
         </div>
@@ -82,7 +83,7 @@
         <div class="container slide6">
             <div class="content">
                 <h2>
-                    Preparing to unleash.
+                    The build of tomorrow.
                 </h2>
             </div>
         </div>
@@ -100,6 +101,31 @@
     $(document).ready(function(){
         $('.container.slide1 h2').hover(function(){
             $(this).parents('.container.slide1').toggleClass('hovered');
+        });
+
+        $(document).scroll(function(){
+            var slideHeight = $('.slide2').offset().top;
+            var docHeight = $(window).scrollTop();
+            console.log(slideHeight, docHeight/slideHeight+1);
+
+            var activeSlide = docHeight/slideHeight+1;
+
+            // .css('background-image', 'url(' + imageUrl + ')');
+
+            if(activeSlide < 1.7){
+                $('.container.slide1 .trident').attr('style', 'background-image: url("/assets/images/trident/trident@2x.png")');
+            } else if (activeSlide < 2.7){
+                $('.container.slide1 .trident').attr('style', 'background-image: url("/assets/images/trident/performance@2x.png")');
+            } else if (activeSlide < 3.7){
+                $('.container.slide1 .trident').css('background-image', 'url("/assets/images/trident/convertible@2x.png")');
+            } else if (activeSlide < 4.7){
+                $('.container.slide1 .trident').css('background-image', 'url("/assets/images/trident/adjustable-seats@2x.png")');
+            } else if (activeSlide < 5.7){
+                $('.container.slide1 .trident').css('background-image', 'url("/assets/images/trident/collision-avoidance@2x.png")');
+            } else if (activeSlide < 6){
+                $('.container.slide1 .trident').css('background-image', 'url("/assets/images/trident/dimension@2x.png")');
+            } 
+
         });
     });
 </script>
