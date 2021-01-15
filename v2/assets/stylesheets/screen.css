@@ -71,10 +71,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body, html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  line-height: 19px;
   color: #022630;
 }
 
-/* line 16, ../../sass/partials/core.scss */
+/* line 17, ../../sass/partials/core.scss */
 * {
   box-sizing: border-box;
   -moz-transition-property: all;
@@ -87,7 +88,7 @@ body, html {
   transition-duration: 0.3s;
 }
 
-/* line 22, ../../sass/partials/core.scss */
+/* line 23, ../../sass/partials/core.scss */
 h2 {
   font-family: "Odibee Sans", cursive;
   font-size: 96px;
@@ -95,15 +96,23 @@ h2 {
   line-height: 88px;
   z-index: 9;
   position: relative;
-  margin: 120px 0 0;
+  margin: 120px 0 40px;
 }
 
 /* line 32, ../../sass/partials/core.scss */
+h4 {
+  font-size: 32px;
+  font-family: "Odibee Sans", cursive;
+  color: #F9F3D9;
+  margin-bottom: 15px;
+}
+
+/* line 39, ../../sass/partials/core.scss */
 .wrapper {
   max-width: 1680px;
   margin: 0 auto;
 }
-/* line 36, ../../sass/partials/core.scss */
+/* line 43, ../../sass/partials/core.scss */
 .wrapper .container {
   height: 100vh;
   flex-direction: column;
@@ -112,12 +121,27 @@ h2 {
   padding-top: 90px;
   position: relative;
 }
-/* line 45, ../../sass/partials/core.scss */
+/* line 52, ../../sass/partials/core.scss */
+.wrapper .container .sneakpeak {
+  text-align: right;
+  position: fixed;
+  right: 30px;
+  z-index: 999;
+  top: 110px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 60, ../../sass/partials/core.scss */
+.wrapper .container .sneakpeak.show {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 65, ../../sass/partials/core.scss */
 .wrapper .container.slide1 {
   background-color: #4AC498;
   z-index: 1;
 }
-/* line 49, ../../sass/partials/core.scss */
+/* line 69, ../../sass/partials/core.scss */
 .wrapper .container.slide1::after {
   content: "";
   position: absolute;
@@ -135,71 +159,71 @@ h2 {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 63, ../../sass/partials/core.scss */
+/* line 83, ../../sass/partials/core.scss */
 .wrapper .container.slide1 > * {
   z-index: 2;
 }
-/* line 68, ../../sass/partials/core.scss */
+/* line 88, ../../sass/partials/core.scss */
 .wrapper .container.slide1.hovered::after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 72, ../../sass/partials/core.scss */
+/* line 92, ../../sass/partials/core.scss */
 .wrapper .container.slide1.hovered .header {
   color: #4AC498;
 }
-/* line 75, ../../sass/partials/core.scss */
+/* line 95, ../../sass/partials/core.scss */
 .wrapper .container.slide1.hovered .header a {
   color: #4AC498;
 }
-/* line 81, ../../sass/partials/core.scss */
+/* line 101, ../../sass/partials/core.scss */
 .wrapper .container.slide1.hovered .content .trident {
   background-image: url("../images/trident/aurora@2x.png");
 }
-/* line 85, ../../sass/partials/core.scss */
+/* line 105, ../../sass/partials/core.scss */
 .wrapper .container.slide1.hovered .content .trident-label {
   filter: brightness(10) hue-rotate(314deg);
   opacity: .5;
 }
-/* line 91, ../../sass/partials/core.scss */
+/* line 111, ../../sass/partials/core.scss */
 .wrapper .container.slide1.hovered .innerMenu img {
   filter: brightness(2000%);
 }
-/* line 97, ../../sass/partials/core.scss */
+/* line 117, ../../sass/partials/core.scss */
 .wrapper .container.slide2 {
   background-color: #F9F3D9;
   color: #022630;
 }
-/* line 101, ../../sass/partials/core.scss */
-.wrapper .container.slide2 h2 {
+/* line 121, ../../sass/partials/core.scss */
+.wrapper .container.slide2 h2, .wrapper .container.slide2 h4 {
   color: #022630;
 }
-/* line 106, ../../sass/partials/core.scss */
+/* line 126, ../../sass/partials/core.scss */
 .wrapper .container.slide2 .content .trident {
   background-image: url("../images/trident/performance@2x.png");
 }
-/* line 111, ../../sass/partials/core.scss */
+/* line 131, ../../sass/partials/core.scss */
 .wrapper .container.slide3 {
   background-color: #F28E85;
 }
-/* line 114, ../../sass/partials/core.scss */
+/* line 134, ../../sass/partials/core.scss */
 .wrapper .container.slide4 {
   background-color: #4AC498;
 }
-/* line 117, ../../sass/partials/core.scss */
+/* line 137, ../../sass/partials/core.scss */
 .wrapper .container.slide5 {
   background-color: #F9F3D9;
   color: #022630;
 }
-/* line 121, ../../sass/partials/core.scss */
-.wrapper .container.slide5 h2 {
+/* line 141, ../../sass/partials/core.scss */
+.wrapper .container.slide5 h2, .wrapper .container.slide5 h4 {
   color: #022630;
 }
-/* line 125, ../../sass/partials/core.scss */
+/* line 145, ../../sass/partials/core.scss */
 .wrapper .container.slide6 {
   background-color: #F28E85;
 }
-/* line 129, ../../sass/partials/core.scss */
+/* line 149, ../../sass/partials/core.scss */
 .wrapper .container .header {
   display: flex;
   align-items: baseline;
@@ -209,26 +233,26 @@ h2 {
   top: 0;
   z-index: 90;
 }
-/* line 138, ../../sass/partials/core.scss */
+/* line 158, ../../sass/partials/core.scss */
 .wrapper .container .header .brand {
   font-family: "Odibee Sans", cursive;
   font-size: 29px;
   margin: 30px;
 }
-/* line 143, ../../sass/partials/core.scss */
+/* line 163, ../../sass/partials/core.scss */
 .wrapper .container .header .menu {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-/* line 149, ../../sass/partials/core.scss */
+/* line 169, ../../sass/partials/core.scss */
 .wrapper .container .header .menu a {
   color: #022630;
   text-decoration: none;
   margin: 0 15px;
 }
-/* line 154, ../../sass/partials/core.scss */
+/* line 174, ../../sass/partials/core.scss */
 .wrapper .container .header .menu a.btn {
   color: #022630;
   border: 2px solid #022630;
@@ -237,11 +261,11 @@ h2 {
   border-radius: 10px;
   font-weight: bold;
 }
-/* line 163, ../../sass/partials/core.scss */
+/* line 183, ../../sass/partials/core.scss */
 .wrapper .container .header .menu > a {
   margin: 0 30px;
 }
-/* line 169, ../../sass/partials/core.scss */
+/* line 189, ../../sass/partials/core.scss */
 .wrapper .container .innerMenu {
   position: absolute;
   display: inline-block;
@@ -255,38 +279,38 @@ h2 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-/* line 181, ../../sass/partials/core.scss */
+/* line 201, ../../sass/partials/core.scss */
 .wrapper .container .innerMenu.performance {
   height: 497px;
   background-position: 0px 0px;
 }
-/* line 185, ../../sass/partials/core.scss */
+/* line 205, ../../sass/partials/core.scss */
 .wrapper .container .innerMenu.convertible {
   height: 425px;
   background-position: -135px 0px;
 }
-/* line 189, ../../sass/partials/core.scss */
+/* line 209, ../../sass/partials/core.scss */
 .wrapper .container .innerMenu.seats {
   height: 620px;
   background-position: -280px 0px;
 }
-/* line 193, ../../sass/partials/core.scss */
+/* line 213, ../../sass/partials/core.scss */
 .wrapper .container .innerMenu.safety {
   height: 704px;
   background-position: -420px 0px;
 }
-/* line 197, ../../sass/partials/core.scss */
+/* line 217, ../../sass/partials/core.scss */
 .wrapper .container .innerMenu.dimension {
   height: 427px;
   background-position: -560px 0px;
 }
-/* line 203, ../../sass/partials/core.scss */
+/* line 223, ../../sass/partials/core.scss */
 .wrapper .container .content {
   min-width: 910px;
   flex: 1;
   position: relative;
 }
-/* line 208, ../../sass/partials/core.scss */
+/* line 228, ../../sass/partials/core.scss */
 .wrapper .container .content .trident {
   background: url("../images/trident/trident@2x.png") no-repeat center center;
   width: 111%;
@@ -299,7 +323,7 @@ h2 {
   right: 0;
   margin: auto;
 }
-/* line 221, ../../sass/partials/core.scss */
+/* line 241, ../../sass/partials/core.scss */
 .wrapper .container .content .trident-label {
   position: relative;
   top: -75px;

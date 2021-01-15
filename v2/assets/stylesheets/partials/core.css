@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'transition-property'.
-        on line 18 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss, in `transition-property'
-        from line 18 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss
+        on line 19 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss, in `transition-property'
+        from line 19 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss
 
-13:     color: $darkColor;
-14: }
-15: 
-16: * {
-17:     box-sizing: border-box;
-18:     @include transition-property(all);
-19:     @include transition-duration(.3s);
-20: }
-21: 
-22: h2{
-23:     font-family: $brandFont;
+14:     color: $darkColor;
+15: }
+16: 
+17: * {
+18:     box-sizing: border-box;
+19:     @include transition-property(all);
+20:     @include transition-duration(.3s);
+21: }
+22: 
+23: h2{
+24:     font-family: $brandFont;
 
 Backtrace:
-/Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss:18:in `transition-property'
-/Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss:18
+/Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss:19:in `transition-property'
+/Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss:19
 /Users/gopiraja/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Users/gopiraja/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/gopiraja/.rvm/gems/ruby-2.6.3/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
@@ -72,4 +72,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition-property'.\A         on line 18 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss, in `transition-property'\A         from line 18 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss\A \A 13:     color: $darkColor;\A 14: }\A 15: \A 16: * {\A 17:     box-sizing: border-box;\A 18:     @include transition-property(all);\A 19:     @include transition-duration(.3s);\A 20: }\A 21: \A 22: h2{\A 23:     font-family: $brandFont;"; }
+  content: "Error: Undefined mixin 'transition-property'.\A         on line 19 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss, in `transition-property'\A         from line 19 of /Users/gopiraja/Desktop/Gopi_Backedup_Files/EV/website/tshellmotors.github.io/v2/./sass/partials/core.scss\A \A 14:     color: $darkColor;\A 15: }\A 16: \A 17: * {\A 18:     box-sizing: border-box;\A 19:     @include transition-property(all);\A 20:     @include transition-duration(.3s);\A 21: }\A 22: \A 23: h2{\A 24:     font-family: $brandFont;"; }

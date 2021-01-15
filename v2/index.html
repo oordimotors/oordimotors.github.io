@@ -45,6 +45,19 @@
                 <h2>
                     Preparing to unleash.
                 </h2>
+                <div class="sneakpeak">
+                    <h4>A sneak peek</h4>
+                    <p>Here’s a glimpse for you,<br/>
+                    while we prepare for the launch.</p>
+                </div>
+                <dl>
+                    <dt>Acceleration 0-100 km</dt>
+                    <dd>5 secs</dd>
+                    <dt>Top Speed</dt>
+                    <dd>Range</dd>
+                    <dt>200 km/h</dt>
+                    <dd>300 km</dd>
+                </dl>
             </div>
         </div>
 
@@ -54,6 +67,7 @@
                 <h2>
                     Feel the breeze topless.
                 </h2>
+                <h4>Cruise friendly soft-top convertible.</h4>
             </div>
         </div>
 
@@ -63,10 +77,36 @@
                 <h2>
                     Adventure together.
                 </h2>
+                <h4>Convertible seats - use it as you like it.</h4>
             </div>
         </div>
 
         <div class="container slide5">
+            <img src="./assets/images/blank.png" class="innerMenu dimension"/>
+            <div class="content">
+                <h2>
+                    The build of tomorrow.
+                </h2>
+                <dl>
+                    <dt>Width</dt>
+                    <dd>1052 mm</dd>
+                    <dt>Track Width</dt>
+                    <dd>950 mm</dd>
+                    <dt>Wheel Base</dt>
+                    <dd>2800 mm</dd>
+                    <dt>Length</dt>
+                    <dd>4000 mm</dd>
+                    <dt>Height</dt>
+                    <dd>1200 mm</dd>
+                    <dt>Turning Radius</dt>
+                    <dd>3812 mm</dd>
+                    <dt>Ground Clearance</dt>
+                    <dd>170 mm</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="container slide6">
             <img src="./assets/images/blank.png" class="innerMenu safety"/>
             <div class="content">
                 <h2>
@@ -75,16 +115,6 @@
                 </h2>
             </div>
         </div>
-
-        <div class="container slide6">
-            <img src="./assets/images/blank.png" class="innerMenu dimension"/>
-            <div class="content">
-                <h2>
-                    The build of tomorrow.
-                </h2>
-            </div>
-        </div>
-
 
     </div>
 
@@ -113,12 +143,16 @@
             var location = "./assets/images/trident/";
 
             if(activeSlide < 1.7){
+                $('.sneakpeak').removeClass('show');
                 if (pixelRatio == 1){
                     $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident.png")');
+                    $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora.png")');
                 } else{
                     $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident@2x.png")');
+                    $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora@2x.png")');
                 }
             } else if (activeSlide < 2.7){
+                $('.sneakpeak').addClass('show');
                 if (pixelRatio == 1){
                     $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/performance.png")');
                 } else{
@@ -138,15 +172,15 @@
                 }
             } else if (activeSlide < 5.7){
                 if (pixelRatio == 1){
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance.png")');
-                } else{
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance@2x.png")');
-                }
-            } else if (activeSlide < 6){
-                if (pixelRatio == 1){
                     $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/dimension.png")');
                 } else{
                     $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/dimension@2x.png")');
+                }
+            } else if (activeSlide < 6){
+                if (pixelRatio == 1){
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance.png")');
+                } else{
+                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance@2x.png")');
                 }
             } 
 
