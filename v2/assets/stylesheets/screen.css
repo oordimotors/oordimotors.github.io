@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 10, ../../sass/partials/core.scss */
+/* line 10, ../../sass/partials/_core.scss */
 body, html {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -75,7 +75,7 @@ body, html {
   color: #022630;
 }
 
-/* line 17, ../../sass/partials/core.scss */
+/* line 17, ../../sass/partials/_core.scss */
 * {
   box-sizing: border-box;
   -moz-transition-property: all;
@@ -88,7 +88,7 @@ body, html {
   transition-duration: 0.3s;
 }
 
-/* line 23, ../../sass/partials/core.scss */
+/* line 23, ../../sass/partials/_core.scss */
 h2 {
   font-family: "Odibee Sans", cursive;
   font-size: 96px;
@@ -99,7 +99,7 @@ h2 {
   margin: 95px 0 30px;
 }
 
-/* line 32, ../../sass/partials/core.scss */
+/* line 32, ../../sass/partials/_core.scss */
 h4 {
   font-size: 32px;
   font-family: "Odibee Sans", cursive;
@@ -107,23 +107,23 @@ h4 {
   margin-bottom: 15px;
 }
 
-/* line 40, ../../sass/partials/core.scss */
+/* line 40, ../../sass/partials/_core.scss */
 dl dt {
   float: left;
 }
-/* line 43, ../../sass/partials/core.scss */
+/* line 43, ../../sass/partials/_core.scss */
 dl dd {
   font-weight: bold;
   margin-left: 250px;
   margin-bottom: 15px;
 }
 
-/* line 50, ../../sass/partials/core.scss */
+/* line 50, ../../sass/partials/_core.scss */
 .wrapper {
   max-width: 1680px;
   margin: 0 auto;
 }
-/* line 54, ../../sass/partials/core.scss */
+/* line 54, ../../sass/partials/_core.scss */
 .wrapper .container {
   height: 100vh;
   flex-direction: column;
@@ -132,7 +132,7 @@ dl dd {
   padding-top: 90px;
   position: relative;
 }
-/* line 63, ../../sass/partials/core.scss */
+/* line 63, ../../sass/partials/_core.scss */
 .wrapper .container .sneakpeak {
   text-align: right;
   position: fixed;
@@ -142,17 +142,17 @@ dl dd {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 71, ../../sass/partials/core.scss */
+/* line 71, ../../sass/partials/_core.scss */
 .wrapper .container .sneakpeak.show {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 76, ../../sass/partials/core.scss */
+/* line 76, ../../sass/partials/_core.scss */
 .wrapper .container.slide1 {
   background-color: #4AC498;
   z-index: 1;
 }
-/* line 80, ../../sass/partials/core.scss */
+/* line 80, ../../sass/partials/_core.scss */
 .wrapper .container.slide1::after {
   content: "";
   position: absolute;
@@ -162,7 +162,7 @@ dl dd {
   top: 0;
   height: 100%;
   background: url("../images/auroraBG.png") no-repeat center center;
-  background-size: 100%;
+  background-size: cover;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -moz-transition-duration: 1s;
@@ -170,71 +170,71 @@ dl dd {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 94, ../../sass/partials/core.scss */
+/* line 94, ../../sass/partials/_core.scss */
 .wrapper .container.slide1 > * {
   z-index: 2;
 }
-/* line 99, ../../sass/partials/core.scss */
+/* line 99, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered::after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 103, ../../sass/partials/core.scss */
+/* line 103, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .header {
   color: #4AC498;
 }
-/* line 106, ../../sass/partials/core.scss */
+/* line 106, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .header a {
   color: #4AC498;
 }
-/* line 112, ../../sass/partials/core.scss */
+/* line 112, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .content .trident {
   background-image: url("../images/trident/aurora@2x.png");
 }
-/* line 116, ../../sass/partials/core.scss */
+/* line 116, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .content .trident-label {
   filter: brightness(10) hue-rotate(314deg);
   opacity: .5;
 }
-/* line 122, ../../sass/partials/core.scss */
+/* line 122, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .innerMenu img {
   filter: brightness(2000%);
 }
-/* line 128, ../../sass/partials/core.scss */
+/* line 128, ../../sass/partials/_core.scss */
 .wrapper .container.slide2 {
   background-color: #F9F3D9;
   color: #022630;
 }
-/* line 132, ../../sass/partials/core.scss */
+/* line 132, ../../sass/partials/_core.scss */
 .wrapper .container.slide2 h2, .wrapper .container.slide2 h4 {
   color: #022630;
 }
-/* line 137, ../../sass/partials/core.scss */
+/* line 137, ../../sass/partials/_core.scss */
 .wrapper .container.slide2 .content .trident {
   background-image: url("../images/trident/performance@2x.png");
 }
-/* line 142, ../../sass/partials/core.scss */
+/* line 142, ../../sass/partials/_core.scss */
 .wrapper .container.slide3 {
   background-color: #F28E85;
 }
-/* line 145, ../../sass/partials/core.scss */
+/* line 145, ../../sass/partials/_core.scss */
 .wrapper .container.slide4 {
   background-color: #4AC498;
 }
-/* line 148, ../../sass/partials/core.scss */
+/* line 148, ../../sass/partials/_core.scss */
 .wrapper .container.slide5 {
   background-color: #F9F3D9;
   color: #022630;
 }
-/* line 152, ../../sass/partials/core.scss */
+/* line 152, ../../sass/partials/_core.scss */
 .wrapper .container.slide5 h2, .wrapper .container.slide5 h4 {
   color: #022630;
 }
-/* line 156, ../../sass/partials/core.scss */
+/* line 156, ../../sass/partials/_core.scss */
 .wrapper .container.slide6 {
   background-color: #F28E85;
 }
-/* line 160, ../../sass/partials/core.scss */
+/* line 160, ../../sass/partials/_core.scss */
 .wrapper .container .header {
   display: flex;
   align-items: baseline;
@@ -244,26 +244,26 @@ dl dd {
   top: 0;
   z-index: 90;
 }
-/* line 169, ../../sass/partials/core.scss */
+/* line 169, ../../sass/partials/_core.scss */
 .wrapper .container .header .brand {
   font-family: "Odibee Sans", cursive;
   font-size: 29px;
   margin: 30px;
 }
-/* line 174, ../../sass/partials/core.scss */
+/* line 174, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-/* line 180, ../../sass/partials/core.scss */
+/* line 180, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu a {
   color: #022630;
   text-decoration: none;
   margin: 0 15px;
 }
-/* line 185, ../../sass/partials/core.scss */
+/* line 185, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu a.btn {
   color: #022630;
   border: 2px solid #022630;
@@ -272,11 +272,11 @@ dl dd {
   border-radius: 10px;
   font-weight: bold;
 }
-/* line 194, ../../sass/partials/core.scss */
+/* line 194, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu > a {
   margin: 0 30px;
 }
-/* line 200, ../../sass/partials/core.scss */
+/* line 200, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu {
   position: absolute;
   display: inline-block;
@@ -290,38 +290,38 @@ dl dd {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-/* line 212, ../../sass/partials/core.scss */
+/* line 212, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.performance {
   height: 497px;
   background-position: 0px 0px;
 }
-/* line 216, ../../sass/partials/core.scss */
+/* line 216, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.convertible {
   height: 425px;
   background-position: -135px 0px;
 }
-/* line 220, ../../sass/partials/core.scss */
+/* line 220, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.seats {
   height: 620px;
   background-position: -280px 0px;
 }
-/* line 224, ../../sass/partials/core.scss */
+/* line 224, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.safety {
   height: 704px;
   background-position: -420px 0px;
 }
-/* line 228, ../../sass/partials/core.scss */
+/* line 228, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.dimension {
   height: 427px;
   background-position: -560px 0px;
 }
-/* line 234, ../../sass/partials/core.scss */
+/* line 234, ../../sass/partials/_core.scss */
 .wrapper .container .content {
   min-width: 910px;
   flex: 1;
   position: relative;
 }
-/* line 239, ../../sass/partials/core.scss */
+/* line 239, ../../sass/partials/_core.scss */
 .wrapper .container .content .trident {
   background: url("../images/trident/trident@2x.png") no-repeat center center;
   width: 111%;
@@ -334,10 +334,23 @@ dl dd {
   right: 0;
   margin: auto;
 }
-/* line 252, ../../sass/partials/core.scss */
+/* line 252, ../../sass/partials/_core.scss */
 .wrapper .container .content .trident-label {
   position: relative;
   top: -125px;
   z-index: 10;
   left: 226px;
+}
+
+@media only screen and (min-width: 1441px) {
+  /* line 2, ../../sass/partials/_responsive.scss */
+  .wrapper .container .content .trident-label {
+    top: -60px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 8, ../../sass/partials/_responsive.scss */
+  .wrapper .container .innerMenu {
+    display: none;
+  }
 }
