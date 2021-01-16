@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <!-- <div class="loader">
+        <img src="./assets/images/loader.gif" width="400" />
+    </div> -->
 
     <div class="wrapper">
         <div class="container slide1">
@@ -123,20 +126,37 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
 
 <script>
+    // $(document).waitForImages(function() {
+    //     console.log("all images are loaded");
+    //     $('.loader').hide();
+    // });
+
+    var pixelRatio = window.devicePixelRatio;
+    var docWidth = $(document).width();
+    var loc = './assets/images/trident/';
+    var ext;
+    if (pixelRatio == 1){
+        ext = '.png';
+    } else if(docWidth < 541) {
+        ext = '@.5x.png';
+    } else {
+        ext = '@2x.png';
+    }
+
+    // Preload images
+    $('<img src='+loc+'trident'+ext+' />');
+    $('<img src='+loc+'aurora'+ext+' />');
+    $('<img src='+loc+'performance'+ext+' />');
+    $('<img src='+loc+'convertible'+ext+' />');
+    $('<img src='+loc+'adjustable-seats'+ext+' />');
+    $('<img src='+loc+'dimension'+ext+' />');
+    $('<img src='+loc+'collision-avoidance'+ext+' />');
+
     $(document).ready(function(){
-        var pixelRatio = window.devicePixelRatio;
-        var docWidth = $(document).width();
-        var loc = './assets/images/trident/';
-        var ext;
-        if (pixelRatio == 1){
-            ext = '.png';
-        } else if(docWidth < 541) {
-            ext = '@.5x.png';
-        } else {
-            ext = '@2x.png';
-        }
+        
         $('.container.slide1 .trident').css('background-image', 'url('+loc+'trident'+ext+')');
 
         $(window).on('resize', function(){
