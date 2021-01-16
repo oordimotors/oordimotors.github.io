@@ -144,12 +144,21 @@
 
             if(activeSlide < 1.7){
                 $('.sneakpeak').removeClass('show');
+
+                var slide1Hovered = $('.container.slide1 .trident').hasClass('trident');
+
                 if (pixelRatio == 1){
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident.png")');
-                    $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora.png")');
+                    if(slide1Hovered == true){
+                        $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident@2x.png")');
+                    } else{
+                        $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora@2x.png")');
+                    }
                 } else{
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident@2x.png")');
-                    $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora@2x.png")');
+                    if(slide1Hovered == true){
+                        $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident.png")');
+                    } else{
+                        $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora.png")');
+                    }
                 }
             } else if (activeSlide < 2.7){
                 $('.sneakpeak').addClass('show');

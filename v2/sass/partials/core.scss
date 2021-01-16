@@ -36,6 +36,17 @@ h4{
     margin-bottom: 15px;
 }
 
+dl{
+    dt{
+        float: left;
+    }
+    dd{
+        font-weight: bold;
+        margin-left: 250px;
+        margin-bottom: 15px;
+    }
+}
+
 .wrapper{
     max-width: 1680px;
     margin: 0 auto;
@@ -52,7 +63,7 @@ h4{
         & .sneakpeak{
             text-align: right;
             position: fixed;
-            right: 30px;
+            right: 35px;
             z-index: 999;
             top: 110px;
             @include opacity(0);
@@ -240,7 +251,7 @@ h4{
 
             & .trident-label{
                 position: relative;
-                top: -75px;
+                top: -125px;
                 z-index: 10;
                 left: 226px;
             }
