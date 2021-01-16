@@ -131,63 +131,40 @@
         });
 
         var pixelRatio = window.devicePixelRatio;
+        var loc = './assets/images/trident/';
+        var ext;
+        if (pixelRatio == 1){
+            ext = '.png';
+        } else {
+            ext = '@2x.png';
+        }
 
         $(document).scroll(function(){
             var slideHeight = $('.slide2').offset().top;
             var docHeight = $(window).scrollTop();
             var activeSlide = docHeight/slideHeight+1;
-            var ext;
-            var location = "./assets/images/trident/";
 
             if(activeSlide < 1.7){
                 $('.sneakpeak').removeClass('show');
 
                 var slide1Hovered = $('.container.slide1 .trident').hasClass('trident');
 
-                if (pixelRatio == 1){
-                    if(slide1Hovered == true){
-                        $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident@2x.png")');
-                    } else{
-                        $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora@2x.png")');
-                    }
+                if(slide1Hovered == true){
+                    $('.container.slide1 .trident').css('background-image', 'url('+loc+'trident'+ext+')');
                 } else{
-                    if(slide1Hovered == true){
-                        $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/trident.png")');
-                    } else{
-                        $('.container.slide1.hovered .trident').css('background-image', 'url("./assets/images/trident/aurora.png")');
-                    }
+                    $('.container.slide1 .trident').css('background-image', 'url('+loc+'aurora'+ext+')');
                 }
             } else if (activeSlide < 2.7){
                 $('.sneakpeak').addClass('show');
-                if (pixelRatio == 1){
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/performance.png")');
-                } else{
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/performance@2x.png")');
-                }
+                $('.container.slide1 .trident').css('background-image', 'url('+loc+'performance'+ext+')');
             } else if (activeSlide < 3.7){
-                if (pixelRatio == 1){
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/convertible.png")');
-                } else{
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/convertible@2x.png")');
-                }
+                $('.container.slide1 .trident').css('background-image', 'url('+loc+'convertible'+ext+')');
             } else if (activeSlide < 4.7){
-                if (pixelRatio == 1){
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/adjustable-seats.png")');
-                } else{
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/adjustable-seats@2x.png")');
-                }
+                $('.container.slide1 .trident').css('background-image', 'url('+loc+'adjustable-seats'+ext+')');
             } else if (activeSlide < 5.7){
-                if (pixelRatio == 1){
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/dimension.png")');
-                } else{
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/dimension@2x.png")');
-                }
+                $('.container.slide1 .trident').css('background-image', 'url('+loc+'dimension'+ext+')');
             } else if (activeSlide < 6){
-                if (pixelRatio == 1){
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance.png")');
-                } else{
-                    $('.container.slide1 .trident').css('background-image', 'url("./assets/images/trident/collision-avoidance@2x.png")');
-                }
+                $('.container.slide1 .trident').css('background-image', 'url('+loc+'collision-avoidance'+ext+')');
             } 
 
         });
