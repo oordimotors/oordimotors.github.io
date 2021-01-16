@@ -126,18 +126,28 @@
 
 <script>
     $(document).ready(function(){
-        $('.container.slide1 h2').hover(function(){
-            $(this).parents('.container.slide1').toggleClass('hovered');
-        });
-
         var pixelRatio = window.devicePixelRatio;
+        var docWidth = $(document).width();
         var loc = './assets/images/trident/';
         var ext;
         if (pixelRatio == 1){
             ext = '.png';
+        } else if(docWidth < 541) {
+            ext = '@.5x.png';
         } else {
             ext = '@2x.png';
         }
+        $('.container.slide1 .trident').css('background-image', 'url('+loc+'trident'+ext+')');
+
+        $(window).on('resize', function(){
+            docWidth = $(document).width();
+        });
+
+        $('.container.slide1 h2').hover(function(){
+            if(docWidth > 1024){
+                $(this).parents('.container.slide1').toggleClass('hovered');
+            }
+        });
 
         $(document).scroll(function(){
             var slideHeight = $('.slide2').offset().top;

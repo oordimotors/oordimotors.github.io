@@ -36,7 +36,44 @@
                 width: 250px;
                 top: -45px;
             }
+            & h4, & dl{
+                margin-left: 30px;
+            }
+        }
+        & .sneakpeak{
+            right: 30px;
+            top: auto;
+            bottom: 30px;
 
+            & h4{
+                font-size: 24px;
+                margin: 0 0 5px;
+            }
+            & p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 540px) {
+    h2{
+        margin: 15px 30px;
+    }
+    .wrapper .container{
+        & .content{
+            min-width: 100%;
+    
+            & .trident{
+                width: 100%;
+                background-size: 1700px;
+            }
+            & .trident-label{
+                position: relative;
+                top: -60px;
+                z-index: 10;
+                left: 139px;
+            }
             & h4, & dl{
                 margin-left: 30px;
             }
@@ -57,3 +94,19 @@
     }
 }
   
+
+@media only screen and (min-width: 1024px) {
+    .wrapper .container.slide1::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: url('../images/auroraBG.png') no-repeat center center;
+        background-size: cover;
+        @include opacity(0);
+        @include transition-duration(1s);
+    }
+}

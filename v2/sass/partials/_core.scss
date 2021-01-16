@@ -74,23 +74,35 @@ dl{
             }
         }
 
+        & .content{
+            min-width: 910px;
+            flex: 1;
+            position: relative;
+
+            & .trident{
+                background: no-repeat center center;
+                width: 111%;
+                height: 100%;
+                display: inline-block;
+                background-size: 2166px;
+                position: fixed;
+                left: 0;
+                top: 120px;
+                right: 0;
+                margin: auto;
+            }
+
+            & .trident-label{
+                position: relative;
+                top: -125px;
+                z-index: 10;
+                left: 226px;
+            }
+        }
+
         &.slide1{
             background-color: $bg1;
             z-index: 1;
-
-            &::after{
-                content: "";
-                position: absolute;
-                width: 100%;
-                z-index: 0;
-                left: 0;
-                top: 0;
-                height: 100%;
-                background: url('../images/auroraBG.png') no-repeat center center;
-                background-size: cover;
-                @include opacity(0);
-                @include transition-duration(1s);
-            }
 
             & > *{
                 z-index: 2;
@@ -110,10 +122,6 @@ dl{
                 }
 
                 & .content{
-                    & .trident{
-                        background-image: url('../images/trident/aurora@2x.png');
-                    }
-
                     & .trident-label{
                         filter: brightness(10) hue-rotate(314deg);
                         opacity: .5;
@@ -132,12 +140,6 @@ dl{
 
             & h2, & h4{
                 color: $darkColor;
-            }
-
-            & .content{
-                & .trident{
-                    background-image: url('../images/trident/performance@2x.png');
-                }
             }
         }
         &.slide3{
@@ -231,31 +233,5 @@ dl{
                 background-position: -560px 0px;
             }
         }
-
-        & .content{
-            min-width: 910px;
-            flex: 1;
-            position: relative;
-
-            & .trident{
-                background: url('../images/trident/trident@2x.png') no-repeat center center;
-                width: 111%;
-                height: 100%;
-                display: inline-block;
-                background-size: 2166px;
-                position: fixed;
-                left: 0;
-                top: 120px;
-                right: 0;
-                margin: auto;
-            }
-
-            & .trident-label{
-                position: relative;
-                top: -125px;
-                z-index: 10;
-                left: 226px;
-            }
-        }        
     }
 }
