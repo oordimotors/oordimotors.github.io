@@ -118,6 +118,12 @@
                 </h2>
             </div>
         </div>
+
+        <div class="container slide7">
+            <h2>
+                Let's reimagine Driving.
+            </h2>
+        </div>
     </div>
 </body>
 
@@ -165,6 +171,8 @@
             var docHeight = $(window).scrollTop();
             var activeSlide = docHeight/slideHeight+1;
 
+            console.log("scroll", activeSlide);
+
             if(activeSlide < 1.7){
                 $('.sneakpeak').removeClass('show');
 
@@ -184,8 +192,13 @@
                 $('.container.slide1 .trident').css('background-image', 'url('+loc+'adjustable-seats'+ext+')');
             } else if (activeSlide < 5.7){
                 $('.container.slide1 .trident').css('background-image', 'url('+loc+'dimension'+ext+')');
-            } else if (activeSlide < 6){
+            } else if (activeSlide < 6.7){
                 $('.container.slide1 .trident').css('background-image', 'url('+loc+'collision-avoidance'+ext+')');
+                $('.container.slide1 .trident').css('opacity', '1');
+                $('.sneakpeak').addClass('show');
+            } else if (activeSlide < 7.7){
+                $('.container.slide1 .trident').css('opacity', '0');
+                $('.sneakpeak').removeClass('show');
             } 
 
         });

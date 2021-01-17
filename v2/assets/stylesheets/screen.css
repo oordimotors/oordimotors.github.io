@@ -253,7 +253,17 @@ dl dd {
 .wrapper .container.slide6 {
   background-color: #F28E85;
 }
-/* line 180, ../../sass/partials/_core.scss */
+/* line 179, ../../sass/partials/_core.scss */
+.wrapper .container.slide7 {
+  background-color: #4AC498;
+  align-items: center;
+  justify-content: center;
+}
+/* line 184, ../../sass/partials/_core.scss */
+.wrapper .container.slide7 h2 {
+  margin: -50px 0 0;
+}
+/* line 189, ../../sass/partials/_core.scss */
 .wrapper .container .header {
   display: flex;
   align-items: baseline;
@@ -263,26 +273,26 @@ dl dd {
   top: 0;
   z-index: 90;
 }
-/* line 189, ../../sass/partials/_core.scss */
+/* line 198, ../../sass/partials/_core.scss */
 .wrapper .container .header .brand {
   font-family: "Odibee Sans", cursive;
   font-size: 29px;
   margin: 30px;
 }
-/* line 194, ../../sass/partials/_core.scss */
+/* line 203, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-/* line 200, ../../sass/partials/_core.scss */
+/* line 209, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu a {
   color: #022630;
   text-decoration: none;
   margin: 0 15px;
 }
-/* line 205, ../../sass/partials/_core.scss */
+/* line 214, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu a.btn {
   color: #022630;
   border: 2px solid #022630;
@@ -291,11 +301,11 @@ dl dd {
   border-radius: 10px;
   font-weight: bold;
 }
-/* line 214, ../../sass/partials/_core.scss */
+/* line 223, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu > a {
   margin: 0 30px;
 }
-/* line 220, ../../sass/partials/_core.scss */
+/* line 229, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu {
   position: absolute;
   display: inline-block;
@@ -309,27 +319,27 @@ dl dd {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-/* line 232, ../../sass/partials/_core.scss */
+/* line 241, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.performance {
   height: 497px;
   background-position: 0px 0px;
 }
-/* line 236, ../../sass/partials/_core.scss */
+/* line 245, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.convertible {
   height: 425px;
   background-position: -135px 0px;
 }
-/* line 240, ../../sass/partials/_core.scss */
+/* line 249, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.seats {
   height: 620px;
   background-position: -280px 0px;
 }
-/* line 244, ../../sass/partials/_core.scss */
+/* line 253, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.safety {
   height: 704px;
   background-position: -420px 0px;
 }
-/* line 248, ../../sass/partials/_core.scss */
+/* line 257, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.dimension {
   height: 427px;
   background-position: -560px 0px;
