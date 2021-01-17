@@ -6,6 +6,7 @@ $bg2: #F9F3D9;
 $bg3: #F28E85;
 $lightColor: $bg2;
 $greenColor: $bg1;
+$primaryColor: $bg3;
 
 body,html{
     font-family: $sanserifFont;
@@ -61,9 +62,90 @@ dl{
     }
 }
 
+form{
+    max-width: 910px;
+
+    & fieldset{
+        float: left;
+        width: 40%;
+        margin: 0 5%;
+        display: flex;
+
+        & label{
+            float: left;
+            width: 140px;
+            margin: 13px 0;
+        }
+        & input{
+            margin-bottom: 15px;
+            padding: 12px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            flex: 1;
+        }
+    }
+
+    & .form-footer{
+        display: flex;
+        justify-content: flex-end;
+        padding: 2% 5%;
+    }
+}
+
+.btn{
+    color: $darkColor;
+    border: 2px solid $darkColor;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: none;
+
+    &.btn-primary{
+        background: $darkColor;
+        color: $lightColor;
+        width: 225px;
+    }
+    &[type="reset"]{
+        margin: 0 30px;
+    }
+}
+
 .wrapper{
     max-width: 1680px;
     margin: 0 auto;
+
+    & .header{
+        display: flex;
+        align-items: baseline;
+        margin: 0 auto;
+        width: 99vw;
+        position: fixed;
+        top: 0;
+        z-index: 90;
+
+        & .brand{
+            font-family: $brandFont;
+            font-size: 29px;
+            margin: 30px;
+        }
+        & .menu{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            & a{
+                color: $darkColor;
+                text-decoration: none;
+                margin:0 15px;
+            }
+            & > a{
+                margin:0 30px;
+            }
+        }
+    }
 
     & .container{
         height: 100vh;
@@ -180,49 +262,22 @@ dl{
             background-color: $bg1;
             align-items: center;
             justify-content: center;
+            z-index: 10;
 
             & h2{
                 margin: -50px 0 0;
             }
         }
+        &.slide8{
+            background-color: $bg2;
+            z-index: 10;
+            color: $darkColor;
 
-        & .header{
-            display: flex;
-            align-items: baseline;
-            margin: 0 auto;
-            width: 99vw;
-            position: fixed;
-            top: 0;
-            z-index: 90;
-    
-            & .brand{
-                font-family: $brandFont;
-                font-size: 29px;
-                margin: 30px;
+            & h2, & h4{
+                color: $darkColor;
             }
-            & .menu{
-                flex: 1;
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-    
-                & a{
-                    color: $darkColor;
-                    text-decoration: none;
-                    margin:0 15px;
-    
-                    &.btn{
-                        color: $darkColor;
-                        border: 2px solid $darkColor;
-                        display: inline-block;
-                        padding: 12px;
-                        border-radius: 10px;
-                        font-weight: bold;
-                    }
-                }
-                & > a{
-                    margin:0 30px;
-                }
+            & h2{
+                margin: 30px 0 60px;
             }
         }
 
