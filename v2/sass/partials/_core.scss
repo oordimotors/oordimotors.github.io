@@ -2,9 +2,9 @@ $brandFont: 'Odibee Sans', cursive;
 $sanserifFont: 'Open Sans', sans-serif;
 $darkColor: #022630;
 $bg1: #4AC498;
-$bg2: #F9F3D9;
-$bg3: #F28E85;
-$lightColor: $bg2;
+$bg2: #F28E85;
+$bg3: #F9F3D9;
+$lightColor: $bg3;
 $greenColor: $bg1;
 
 body,html{
@@ -80,7 +80,12 @@ dl{
             right: 35px;
             z-index: 999;
             top: 110px;
+            color: $darkColor;
             @include opacity(0);
+
+            & h4{
+                color: $darkColor;
+            }
 
             &.show{
                 @include opacity(1);
@@ -149,28 +154,34 @@ dl{
 
         &.slide2{
             background-color: $bg2;
+            color: $lightColor;
+        }
+        &.slide3{
+            background-color: $bg3;
             color: $darkColor;
 
             & h2, & h4{
                 color: $darkColor;
             }
-        }
-        &.slide3{
-            background-color: $bg3;
         }
         &.slide4{
             background-color: $bg1;
         }
         &.slide5{
             background-color: $bg2;
+            color: $lightColor;
+
+            & h2{
+                margin-top: 40px;
+            }
+        }
+        &.slide6{
+            background-color: $bg3;
             color: $darkColor;
 
             & h2, & h4{
                 color: $darkColor;
             }
-        }
-        &.slide6{
-            background-color: $bg3;
         }
 
         & .header{
