@@ -154,26 +154,21 @@ dl dd {
   right: 35px;
   z-index: 999;
   top: 110px;
-  color: #022630;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 86, ../../sass/partials/_core.scss */
-.wrapper .container .sneakpeak h4 {
-  color: #022630;
-}
-/* line 90, ../../sass/partials/_core.scss */
+/* line 85, ../../sass/partials/_core.scss */
 .wrapper .container .sneakpeak.show {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 95, ../../sass/partials/_core.scss */
+/* line 90, ../../sass/partials/_core.scss */
 .wrapper .container .content {
   min-width: 910px;
   flex: 1;
   position: relative;
 }
-/* line 100, ../../sass/partials/_core.scss */
+/* line 95, ../../sass/partials/_core.scss */
 .wrapper .container .content .trident {
   background: no-repeat center center;
   width: 111%;
@@ -186,81 +181,79 @@ dl dd {
   right: 0;
   margin: auto;
 }
-/* line 113, ../../sass/partials/_core.scss */
+/* line 108, ../../sass/partials/_core.scss */
 .wrapper .container .content .trident-label {
   position: relative;
   top: -125px;
   z-index: 10;
   left: 226px;
 }
-/* line 121, ../../sass/partials/_core.scss */
+/* line 116, ../../sass/partials/_core.scss */
 .wrapper .container.slide1 {
   background-color: #4AC498;
   z-index: 1;
 }
-/* line 125, ../../sass/partials/_core.scss */
+/* line 120, ../../sass/partials/_core.scss */
 .wrapper .container.slide1 > * {
   z-index: 2;
 }
-/* line 130, ../../sass/partials/_core.scss */
+/* line 125, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered::after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 134, ../../sass/partials/_core.scss */
+/* line 129, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .header {
   color: #4AC498;
 }
-/* line 137, ../../sass/partials/_core.scss */
+/* line 132, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .header a {
   color: #4AC498;
 }
-/* line 143, ../../sass/partials/_core.scss */
+/* line 138, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .content .trident-label {
   filter: brightness(10) hue-rotate(314deg);
   opacity: .5;
 }
-/* line 149, ../../sass/partials/_core.scss */
+/* line 144, ../../sass/partials/_core.scss */
 .wrapper .container.slide1.hovered .innerMenu img {
   filter: brightness(2000%);
 }
-/* line 155, ../../sass/partials/_core.scss */
+/* line 150, ../../sass/partials/_core.scss */
 .wrapper .container.slide2 {
-  background-color: #F28E85;
-  color: #F9F3D9;
-}
-/* line 159, ../../sass/partials/_core.scss */
-.wrapper .container.slide3 {
   background-color: #F9F3D9;
   color: #022630;
 }
-/* line 163, ../../sass/partials/_core.scss */
-.wrapper .container.slide3 h2, .wrapper .container.slide3 h4 {
+/* line 154, ../../sass/partials/_core.scss */
+.wrapper .container.slide2 h2, .wrapper .container.slide2 h4 {
   color: #022630;
 }
-/* line 167, ../../sass/partials/_core.scss */
+/* line 158, ../../sass/partials/_core.scss */
+.wrapper .container.slide3 {
+  background-color: #F28E85;
+}
+/* line 161, ../../sass/partials/_core.scss */
 .wrapper .container.slide4 {
   background-color: #4AC498;
 }
-/* line 170, ../../sass/partials/_core.scss */
+/* line 164, ../../sass/partials/_core.scss */
 .wrapper .container.slide5 {
-  background-color: #F28E85;
-  color: #F9F3D9;
-}
-/* line 174, ../../sass/partials/_core.scss */
-.wrapper .container.slide5 h2 {
-  margin-top: 40px;
-}
-/* line 178, ../../sass/partials/_core.scss */
-.wrapper .container.slide6 {
   background-color: #F9F3D9;
   color: #022630;
 }
-/* line 182, ../../sass/partials/_core.scss */
-.wrapper .container.slide6 h2, .wrapper .container.slide6 h4 {
+/* line 168, ../../sass/partials/_core.scss */
+.wrapper .container.slide5 h2 {
+  margin-top: 40px;
+}
+/* line 172, ../../sass/partials/_core.scss */
+.wrapper .container.slide5 h2, .wrapper .container.slide5 h4 {
   color: #022630;
 }
-/* line 187, ../../sass/partials/_core.scss */
+/* line 176, ../../sass/partials/_core.scss */
+.wrapper .container.slide6 {
+  background-color: #F28E85;
+}
+/* line 180, ../../sass/partials/_core.scss */
 .wrapper .container .header {
   display: flex;
   align-items: baseline;
@@ -270,26 +263,26 @@ dl dd {
   top: 0;
   z-index: 90;
 }
-/* line 196, ../../sass/partials/_core.scss */
+/* line 189, ../../sass/partials/_core.scss */
 .wrapper .container .header .brand {
   font-family: "Odibee Sans", cursive;
   font-size: 29px;
   margin: 30px;
 }
-/* line 201, ../../sass/partials/_core.scss */
+/* line 194, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-/* line 207, ../../sass/partials/_core.scss */
+/* line 200, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu a {
   color: #022630;
   text-decoration: none;
   margin: 0 15px;
 }
-/* line 212, ../../sass/partials/_core.scss */
+/* line 205, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu a.btn {
   color: #022630;
   border: 2px solid #022630;
@@ -298,11 +291,11 @@ dl dd {
   border-radius: 10px;
   font-weight: bold;
 }
-/* line 221, ../../sass/partials/_core.scss */
+/* line 214, ../../sass/partials/_core.scss */
 .wrapper .container .header .menu > a {
   margin: 0 30px;
 }
-/* line 227, ../../sass/partials/_core.scss */
+/* line 220, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu {
   position: absolute;
   display: inline-block;
@@ -316,27 +309,27 @@ dl dd {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-/* line 239, ../../sass/partials/_core.scss */
+/* line 232, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.performance {
   height: 497px;
   background-position: 0px 0px;
 }
-/* line 243, ../../sass/partials/_core.scss */
+/* line 236, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.convertible {
   height: 425px;
   background-position: -135px 0px;
 }
-/* line 247, ../../sass/partials/_core.scss */
+/* line 240, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.seats {
   height: 620px;
   background-position: -280px 0px;
 }
-/* line 251, ../../sass/partials/_core.scss */
+/* line 244, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.safety {
   height: 704px;
   background-position: -420px 0px;
 }
-/* line 255, ../../sass/partials/_core.scss */
+/* line 248, ../../sass/partials/_core.scss */
 .wrapper .container .innerMenu.dimension {
   height: 427px;
   background-position: -560px 0px;
