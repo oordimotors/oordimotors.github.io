@@ -15,6 +15,10 @@ body,html{
     color: $darkColor;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 .loader{
     position: fixed;
     z-index: 100000000000000;
@@ -64,12 +68,15 @@ dl{
 
 form{
     max-width: 910px;
+    display: flex;
+    flex-wrap: wrap;
 
     & fieldset{
         float: left;
         width: 40%;
         margin: 0 5%;
         display: flex;
+        flex: 1;
 
         & label{
             float: left;
@@ -90,6 +97,7 @@ form{
         display: flex;
         justify-content: flex-end;
         padding: 2% 5%;
+        flex: 1;
     }
 }
 
